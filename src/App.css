@@ -1,8 +1,7 @@
 
 .App {
   position: relative;
-  height: 100vh;  
-  width: 60%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
