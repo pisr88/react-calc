@@ -1,7 +1,7 @@
 import React from "react";
 
-const Score = (params) => {
-    return <div style={{fontSize: '3rem'}}>0</div>;
+const Score = (props) => {
+    return <div style={{fontSize: '3rem'}}>{props.value.value}</div>;
 }
 
 export default Score;

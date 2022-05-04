@@ -6,11 +6,17 @@ import Buttons from './components/Buttons/Buttons'
 
 function App() {
 
+    const [clickBtn, setClickBtn] = useState(0);
+
+    const clickBtnHandler = (btn) => {
+        setClickBtn(btn)
+    }
+
 
   return (
     <div className="App">
-      <Header />
-      <Buttons />
+      <Header value={clickBtn} />
+      <Buttons onClick={(btn)=>{clickBtnHandler(btn)}}/>
     </div>
   );
 }
