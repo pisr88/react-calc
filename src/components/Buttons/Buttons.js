@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import style from './buttons.module.css'
 
 const Buttons = (props) => {
-
-
 const keyDownHandler = (e) => {
     let btn = e.target.innerText
     props.onClick(btn)

@@ -1,0 +1,8 @@
+.scoreBox{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    line-break: 333px;
+    font-size: 3rem;
+}

@@ -7,8 +7,13 @@ import Buttons from './components/Buttons/Buttons'
 function App() {
 
     const [clickBtn, setClickBtn] = useState(0);
-
     const clickBtnHandler = (btn) => {
+       if( clickBtn === 0 && btn !== ','){ 
+         setClickBtn(btn)
+      }
+        else{ 
+          btn = clickBtn + btn 
+        }
         setClickBtn(btn)
     }
 
