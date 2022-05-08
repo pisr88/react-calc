@@ -10,28 +10,14 @@ function App() {
     switch (action) {
       case 'C': return state = 0
       default:
-        if(state === 0 && action === 0 ){ console.log('action'); return state}
-        return state = state + action 
+        if(state == 0 && action == 0 ){return state}
+        return state = state + action
     }
-
-
     }
 
     const [currentlyOperation, dispatch] = useReducer(reducer, 0)
-    const [clickBtn, setClickBtn] = useState(0);
-    
-    const resetHeader = (btn) =>{
-      if(btn === 'C'){ setClickBtn(0)}
-    }
-
-    const floadNumber = () => {
-      
-    }
-    
-    
     const clickBtnHandler = (btn) => {
       dispatch(btn)
-      setClickBtn(clickBtn+btn)
     }
 
   return (
