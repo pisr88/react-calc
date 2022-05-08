@@ -8,13 +8,10 @@ function App() {
 
     const [clickBtn, setClickBtn] = useState(0);
     const clickBtnHandler = (btn) => {
-       if( clickBtn === 0 && btn !== ','){ 
-         setClickBtn(btn)
-      }
-        else{ 
-          btn = clickBtn + btn 
-        }
-        setClickBtn(btn)
+
+      if(btn === 'C'){return setClickBtn(0)}
+      if(clickBtn === 0 && btn !== ','){setClickBtn(btn)}else{btn = clickBtn + btn}
+        return setClickBtn(btn)
     }
 
 
