@@ -6,8 +6,8 @@ import style from './Header.module.css';
 function Header (props) {
     return (
     <div className={style.header}>
-        <Operation value={props}/>
-        <Score value={props}/>
+        <Operation operation={props}/>
+        <Score score={props}/>
     </div>
     );
 }

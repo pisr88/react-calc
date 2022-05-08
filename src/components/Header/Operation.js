@@ -3,11 +3,7 @@ import style from './Operation.module.css';
 
 const Operation = (props) => {
     return (
-    useEffect(()=>{
- <div style={{minHeight: '28px'}}></div>
-    })
-    
-    
+      <div style={{minHeight: '28px'}}></div>
    );
 }
 
