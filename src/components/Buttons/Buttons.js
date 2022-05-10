@@ -27,7 +27,7 @@ const keyDownHandler = (e) => {
             <div onClick={keyDownHandler} className={style.button}>3</div>
             <div onClick={keyDownHandler} className={style.button}>+</div>
             <div onClick={keyDownHandler} className={style.button}>0</div>
-            <div onClick={keyDownHandler} className={style.button}>,</div>
+            <div onClick={keyDownHandler} className={style.button}>.</div>
             <div onClick={keyDownHandler} className={style.button}>=</div>
         </div>
     )
